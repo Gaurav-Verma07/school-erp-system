@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server for erp-app",
+  "engines": {
+    "npm": ">=8.1.0",
+    "node": ">=16.13.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "gen": "ts-node src/seed/createCSVfile.ts",
+    "pretty": "prettier --write \"./src/**/*.{ts,js}\"",
+    "lint": "eslint \"**/*.{ts,tsx}\" --ignore-pattern node_modules/ --ignore-pattern dist/",
+    "lint:fix": "eslint \"**/*.ts\" --ignore-pattern node_modules/ --ignore-pattern dist/ --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
