@@ -46,4 +46,5 @@ If you find an issue or would like to submit an improvement to this project, ple
 
 The project already has a dedicated frontend. However, the backend is expected to start from scratch💪.
 Code quality is must in this project for smooth development and shall not be compromised.
+Please go through [CONTRIBUTING.md](https://github.com/Gaurav-Verma07/school-erp-system/blob/main/CONTRIBUTING.md) for contribution guidelines.
  
