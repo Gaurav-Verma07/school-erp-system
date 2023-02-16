@@ -1,4 +1,7 @@
 
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 # School ERP System
 
 Since the covid times, the world has drastically shifted to a new tech front from copy and classrooms to smartphones and online classes. It was hard at beginning for students to cope up with the new advancements but after many efforts now the **online education system** has come to sync with offline classrooms. With this achievement however, there's still one thing missing, i.e, a smart Management System in many small town and rural schools. That's where comes the concept of **"School ERP System"** comes into play.
@@ -48,3 +51,25 @@ The project already has a dedicated frontend. However, the backend is expected t
 Code quality is must in this project for smooth development and shall not be compromised.
 Please go through [CONTRIBUTING.md](https://github.com/Gaurav-Verma07/school-erp-system/blob/main/CONTRIBUTING.md) for contribution guidelines.
  
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://linktr.ee/akshattamrakar"><img src="https://avatars.githubusercontent.com/u/47246016?v=4?s=100" width="100px;" alt="Akshat Tamrakar"/><br /><sub><b>Akshat Tamrakar</b></sub></a><br /><a href="https://github.com/Gaurav Verma/School ERP System/commits?author=Akshat103" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
