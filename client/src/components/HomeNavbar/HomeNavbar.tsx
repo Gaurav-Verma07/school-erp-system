@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Swal from 'sweetalert';
+import swalWithBootstrapButtons from 'sweetalert';
 
 import { createStyles, Navbar, Group, Code } from '@mantine/core';
 import {
@@ -18,6 +18,7 @@ import {
 } from '@tabler/icons';
 import { NavLink, useNavigate } from 'react-router-dom';
 // import { MantineLogo } from '@mantine/ds';
+
 
 const useStyles = createStyles((theme, _params, getRef) => {
   const icon: any = getRef('icon');
@@ -82,8 +83,11 @@ const data = [
   { link: 'assignments', label: 'Assignments', icon: IconNotebook },
   { link: 'settings', label: 'Settings', icon: IconSettings },
 ];
+ 
 
 const HomeNavbar = () => {
+  
+  const navigate = useNavigate();
   const { classes, cx } = useStyles();
   const [active, setActive] = useState('Billing');
 
@@ -105,20 +109,22 @@ const HomeNavbar = () => {
     );
   });
 
-  // A LogOut Function:-------
-  const navigate = useNavigate()
-  function logOut(){
-    
-    Swal({
+  const logOutHandler = () => {
+      swalWithBootstrapButtons({
       title: 'Are you sure you want to LogOut?',
-      text: "IF NOT, CLICK ANYWHERE ELSE!",
+      text: "You won't be able to revert this!",
       icon: 'warning',
     }).then((result) => {
       if (result.isConfirmed) {
-        
-        Swal(
-          'Deleted!',
-          'Your file has been deleted.',
+        swalWithBootstrapButtons(
+          'Logged Out!!',
+          'You have been logged out.',
+          'success'
+        )
+      } {
+        swalWithBootstrapButtons(
+          'Logged Out!!',
+          'You have been logged out.',
           'success'
         )
       }
@@ -126,7 +132,6 @@ const HomeNavbar = () => {
       navigate('/login');
     })
   }
-  // ---------------------------
   
 
   return (
@@ -145,7 +150,7 @@ const HomeNavbar = () => {
           <span>Change account</span>
         </a>
 
-        <a href="#" className={classes.link} onClick={logOut}>
+        <a href="#" className={classes.link} onClick={logOutHandler}>
           <IconLogout className={classes.linkIcon} stroke={1.5} />
           <button>LogOut</button>
         </a>
