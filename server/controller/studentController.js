@@ -1,6 +1,7 @@
 const studentModel = require("../models/student");
 const jwt = require("jsonwebtoken");
 const { JWT_SECRET } = require("../config/keys");
+const attendanaceModel = require("../models/attendance");
 
 class Student {
 
@@ -47,6 +48,37 @@ class Student {
             success: true,
             message: "Logged Out Successfully"
         });
+    }
+
+    async allAttendance(req,res){
+        try{
+            const data = await attendanaceModel.find();
+            res.json({result: data});
+        }
+        catch(err){
+            console.log(err);
+            res.json({error: "Internal server error"});
+        }
+    }
+
+    async subjectAttendance(req,res){
+        const subject = req.params.id;
+        if(!subject){
+            res.json({error: "no subject present"});
+        }
+        try{
+            const data = await attendanaceModel.find({subject: subject});
+            if(!data){
+                res.json({error: "No subject of such type exists"});
+            }
+            else{
+                res.json(data);
+            }
+        }
+        catch(err){
+            console.log(err);
+            res.json({error: "Internal server error"});
+        }
     }
 }
 
