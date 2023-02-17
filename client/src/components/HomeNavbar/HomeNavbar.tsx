@@ -13,7 +13,7 @@ import {
   IconHome2,
   IconUserPlus,
 } from '@tabler/icons';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 // import { MantineLogo } from '@mantine/ds';
 
 const useStyles = createStyles((theme, _params, getRef) => {
@@ -81,7 +81,8 @@ const data = [
 ];
 
 const HomeNavbar = () => {
-  const { classes, cx } = useStyles();
+  const navigate = useNavigate();
+    const { classes, cx } = useStyles();
   const [active, setActive] = useState('Billing');
 
   const links = data.map((item) => {
@@ -94,6 +95,7 @@ const HomeNavbar = () => {
         onClick={(event) => {
           event.preventDefault();
           setActive(item.label);
+          navigate(`/home/${item.link}`);
         }}
       >
         <item.icon className={classes.linkIcon} stroke={1.5} />
