@@ -1,4 +1,7 @@
 import { useState } from 'react';
+
+import Swal from 'sweetalert';
+
 import { createStyles, Navbar, Group, Code } from '@mantine/core';
 import {
   IconSettings,
@@ -13,7 +16,7 @@ import {
   IconHome2,
   IconUserPlus,
 } from '@tabler/icons';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 // import { MantineLogo } from '@mantine/ds';
 
 const useStyles = createStyles((theme, _params, getRef) => {
@@ -102,6 +105,30 @@ const HomeNavbar = () => {
     );
   });
 
+  // A LogOut Function:-------
+  const navigate = useNavigate()
+  function logOut(){
+    
+    Swal({
+      title: 'Are you sure you want to LogOut?',
+      text: "IF NOT, CLICK ANYWHERE ELSE!",
+      icon: 'warning',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        
+        Swal(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      }
+      localStorage.clear();
+      navigate('/login');
+    })
+  }
+  // ---------------------------
+  
+
   return (
     <Navbar height={700} width={{ sm: 300 }} p="md">
       <Navbar.Section grow>
@@ -118,9 +145,9 @@ const HomeNavbar = () => {
           <span>Change account</span>
         </a>
 
-        <a href="#" className={classes.link} onClick={(event) => event.preventDefault()}>
+        <a href="#" className={classes.link} onClick={logOut}>
           <IconLogout className={classes.linkIcon} stroke={1.5} />
-          <span>Logout</span>
+          <button>LogOut</button>
         </a>
       </Navbar.Section>
     </Navbar>
