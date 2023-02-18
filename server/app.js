@@ -6,6 +6,7 @@ require('./config/dbConfig')
 // Import Router
 const studentRouter = require("./routes/studentRoutes");
 const sampleRouter = require('./routes/sampleRoutes');
+const newStudentRouter =  require("./routes/newStudentRoutes")
 
 // Middleware
 app.use(cors());
@@ -14,5 +15,7 @@ app.use(express.json());
 // Routes
 app.use("/v1/student", studentRouter);
 app.use('/v1', sampleRouter);
+app.use('/v1',newStudentRouter);
+
 
 module.exports = app;
