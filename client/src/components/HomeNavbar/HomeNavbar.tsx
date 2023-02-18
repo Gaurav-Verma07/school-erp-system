@@ -15,8 +15,6 @@ import {
   IconUserPlus,
 } from '@tabler/icons';
 import { NavLink, useNavigate } from 'react-router-dom';
-// import { MantineLogo } from '@mantine/ds';
-
 
 const useStyles = createStyles((theme, _params, getRef) => {
   const icon: any = getRef('icon');
@@ -82,9 +80,7 @@ const data = [
   { link: 'settings', label: 'Settings', icon: IconSettings },
 ];
 
-
 const HomeNavbar = () => {
-
   const navigate = useNavigate();
   const { classes, cx } = useStyles();
   const [active, setActive] = useState('Billing');
@@ -107,23 +103,18 @@ const HomeNavbar = () => {
     );
   });
 
-  function logOutHandler() {
-    const response = confirm("Are you sure you want to LogOut?");
-
-                if (response) {
-                    alert("Ok, you are being logged out");
-                    localStorage.clear();
-                    navigate('/login');
-                }
-  }
+  const logOutHandler = () => {
+    const response = confirm('Are you sure you want to LogOut?');
+    if (response) {
+      localStorage.clear();
+      navigate('/login');
+    }
+  };
 
   return (
     <Navbar height={700} width={{ sm: 300 }} p="md">
       <Navbar.Section grow>
-        <Group className={classes.header}>
-          {/* <MantineLogo size={28} />
-          <Code sx={{ fontWeight: 700 }}>v3.1.2</Code> */}
-        </Group>
+        <Group className={classes.header}></Group>
         {links}
       </Navbar.Section>
 
