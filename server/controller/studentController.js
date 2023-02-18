@@ -7,7 +7,7 @@ class Student {
     async Login(req, res) {
         let { email, password } = req.body;
         if (!email || !password) {
-            return res.status(400).json({
+            return res.json({
                 error: "Fields must not be empty",
             });
         }
