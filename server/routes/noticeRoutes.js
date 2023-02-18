@@ -1,11 +1,12 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const noticeController = require("../controller/noticeController");
 
-router.get("/all",noticeController.all);
+const noticeController = require('../controller/noticeController');
 
-router.get("/:id",noticeController.singlepost);
+router.get('/all', noticeController.getAllNotice);
 
-router.post("/post",noticeController.post);
+router.get('/:id', noticeController.getOneNotice);
+
+router.post('/post', noticeController.postNotice);
 
 module.exports = router;

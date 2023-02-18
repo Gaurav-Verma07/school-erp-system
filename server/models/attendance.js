@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const AttendanceSchema = new mongoose.Schema(
     {
-        teacher_name: {
+        teacherName: {
             type: String,
             required: true,
         },
-        student_id: {
+        studentId: {
             type: mongoose.Schema.Types.ObjectId,
             required: true,
         },
@@ -18,7 +18,7 @@ const AttendanceSchema = new mongoose.Schema(
             type: Date,
             default: Date.now(),
         },
-        no_of_periods: {
+        noOfPeriods: {
             type: Number,
             required: true,
         }

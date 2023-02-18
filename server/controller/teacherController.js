@@ -1,14 +1,12 @@
 const attendanaceModel = require("../models/attendance");
 
-class Teacher {
-    
-    async post(req,res){
-        let {teacher_name,student_id,subject,no_of_periods} = req.body;
-        if(!teacher_name || !student_id || !subject || !no_of_periods){
+const post = async function(req,res){
+        let {teacherName,studentId,subject,noOfPeriods} = req.body;
+        if(!teacherName || !studentId || !subject || !noOfPeriods){
             return res.json({error: "Fields must not be empty"});
         }
         try{
-            const newAttendance = new attendanaceModel({teacher_name,student_id,subject,no_of_periods});
+            const newAttendance = new attendanaceModel({teacherName,studentId,subject,noOfPeriods});
             const savedAttendance = await newAttendance.save();
             res.json({savedAttendance});
         }
@@ -17,7 +15,5 @@ class Teacher {
             res.json({error: "Internal server error"});
         }
     }
-}
 
-const teacherController = new Teacher();
-module.exports = teacherController;
+module.exports = {post};
