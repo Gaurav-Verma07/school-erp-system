@@ -1,6 +1,6 @@
 const attendanaceModel = require("../models/attendance");
 
-const post = async function(req,res){
+const postHandler = async (req,res) => {
         let {teacherName,studentId,subject,noOfPeriods} = req.body;
         if(!teacherName || !studentId || !subject || !noOfPeriods){
             return res.json({error: "Fields must not be empty"});
@@ -16,4 +16,4 @@ const post = async function(req,res){
         }
     }
 
-module.exports = {post};
+module.exports = {postHandler};
