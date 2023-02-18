@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import { createStyles, Navbar, Group, Code } from '@mantine/core';
 import {
   IconSettings,
@@ -13,8 +14,7 @@ import {
   IconHome2,
   IconUserPlus,
 } from '@tabler/icons';
-import { NavLink } from 'react-router-dom';
-// import { MantineLogo } from '@mantine/ds';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const useStyles = createStyles((theme, _params, getRef) => {
   const icon: any = getRef('icon');
@@ -81,6 +81,7 @@ const data = [
 ];
 
 const HomeNavbar = () => {
+  const navigate = useNavigate();
   const { classes, cx } = useStyles();
   const [active, setActive] = useState('Billing');
 
@@ -94,6 +95,7 @@ const HomeNavbar = () => {
         onClick={(event) => {
           event.preventDefault();
           setActive(item.label);
+          navigate(`/home/${item.link}`);
         }}
       >
         <item.icon className={classes.linkIcon} stroke={1.5} />
@@ -102,13 +104,18 @@ const HomeNavbar = () => {
     );
   });
 
+  const logOutHandler = () => {
+    const response = confirm('Are you sure you want to LogOut?');
+    if (response) {
+      localStorage.clear();
+      navigate('/login');
+    }
+  };
+
   return (
     <Navbar height={700} width={{ sm: 300 }} p="md">
       <Navbar.Section grow>
-        <Group className={classes.header}>
-          {/* <MantineLogo size={28} />
-          <Code sx={{ fontWeight: 700 }}>v3.1.2</Code> */}
-        </Group>
+        <Group className={classes.header}></Group>
         {links}
       </Navbar.Section>
 
@@ -118,9 +125,9 @@ const HomeNavbar = () => {
           <span>Change account</span>
         </a>
 
-        <a href="#" className={classes.link} onClick={(event) => event.preventDefault()}>
+        <a href="#" className={classes.link} onClick={logOutHandler}>
           <IconLogout className={classes.linkIcon} stroke={1.5} />
-          <span>Logout</span>
+          <span>Log Out</span>
         </a>
       </Navbar.Section>
     </Navbar>
