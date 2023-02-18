@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-import swalWithBootstrapButtons from 'sweetalert';
-
 import { createStyles, Navbar, Group, Code } from '@mantine/core';
 import {
   IconSettings,
@@ -83,10 +81,10 @@ const data = [
   { link: 'assignments', label: 'Assignments', icon: IconNotebook },
   { link: 'settings', label: 'Settings', icon: IconSettings },
 ];
- 
+
 
 const HomeNavbar = () => {
-  
+
   const navigate = useNavigate();
   const { classes, cx } = useStyles();
   const [active, setActive] = useState('Billing');
@@ -109,30 +107,15 @@ const HomeNavbar = () => {
     );
   });
 
-  const logOutHandler = () => {
-      swalWithBootstrapButtons({
-      title: 'Are you sure you want to LogOut?',
-      text: "You won't be able to revert this!",
-      icon: 'warning',
-    }).then((result) => {
-      if (result.isConfirmed) {
-        swalWithBootstrapButtons(
-          'Logged Out!!',
-          'You have been logged out.',
-          'success'
-        )
-      } {
-        swalWithBootstrapButtons(
-          'Logged Out!!',
-          'You have been logged out.',
-          'success'
-        )
-      }
-      localStorage.clear();
-      navigate('/login');
-    })
+  function logOutHandler() {
+    const response = confirm("Are you sure you want to LogOut?");
+
+                if (response) {
+                    alert("Ok, you are being logged out");
+                    localStorage.clear();
+                    navigate('/login');
+                }
   }
-  
 
   return (
     <Navbar height={700} width={{ sm: 300 }} p="md">
