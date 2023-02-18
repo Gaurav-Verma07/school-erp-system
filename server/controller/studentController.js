@@ -1,8 +1,9 @@
 const studentModel = require("../models/student");
 const jwt = require("jsonwebtoken");
 const { JWT_SECRET } = require("../config/keys");
+const attendanaceModel = require("../models/attendance");
 
-const Login = async function (req, res) {
+const loginHandler = async (req, res) =>{
     let { email, password } = req.body;
     if (!email || !password) {
         return res.json({
@@ -38,8 +39,7 @@ const Login = async function (req, res) {
     }
 }
 
-
-const Logout = async function (req, res) {
+const logoutHandler = async = (req, res) {
     res.status(200).cookie("token", null, {
         expires: new Date(Date.now())
     }).json({
@@ -48,4 +48,35 @@ const Logout = async function (req, res) {
     });
 }
 
-module.exports = {Login, Logout};
+const allAttendance = async(req,res)=> {
+        try{
+            const data = await attendanaceModel.find();
+            res.json({result: data});
+        }
+        catch(err){
+            console.log(err);
+            res.json({error: "Internal server error"});
+        }
+    }
+
+const subjectAttendance = async(req,res)=>{
+        const subject = req.params.id;
+        if(!subject){
+            res.json({error: "no subject present"});
+        }
+        try{
+            const data = await attendanaceModel.find({subject: subject});
+            if(!data){
+                res.json({error: "No subject of such type exists"});
+            }
+            else{
+                res.json(data);
+            }
+        }
+        catch(err){
+            console.log(err);
+            res.json({error: "Internal server error"});
+        }
+    }
+
+module.exports = {loginHandler,logoutHandler,allAttendance,subjectAttendance};

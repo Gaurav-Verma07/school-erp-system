@@ -1,4 +1,5 @@
 const NoticeModel = require('../models/notices');
+const { catchAsync } = require('../utlis/catchAsync');
 
 const postNotice = async (req, res) => {
   let { topic, title, description, body, isImportant } = req.body;
@@ -10,20 +11,14 @@ const postNotice = async (req, res) => {
     const savedNotice = await newNotice.save();
     res.json({ savedNotice });
   } catch (err) {
-    console.log(err);
-    res.json({ res: 'Internal error' });
+    res.status(500).json({ err });
   }
 };
 
-const getAllNotice = async (req, res) => {
-  try {
-    const allNotices = await NoticeModel.find();
-    res.json({ result: allNotices });
-  } catch (err) {
-    console.log(err);
-    res.json({ error: 'Internal error' });
-  }
-};
+const getAllNotice = catchAsync(async (req, res, next) => {
+  const allNotices = await NoticeModel.find();
+  res.status(200).json({ result: allNotices });
+});
 
 const getOneNotice = async (req, res) => {
   const id = req.params.id;
@@ -39,8 +34,7 @@ const getOneNotice = async (req, res) => {
       res.json(data);
     }
   } catch (err) {
-    console.log(err);
-    res.json({ error: 'Internal server error' });
+    res.status(500).json(err);
   }
 };
 
