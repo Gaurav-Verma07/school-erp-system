@@ -21,7 +21,7 @@ app.use("/v1/student", studentRouter);
 app.use("/v1/notice",noticeRouter);
 app.use("/v1/teacher",teacherRouter);
 app.use('/v1', sampleRouter);
-app.use('/v1',newStudentRouter);
+app.use('/v1/newstudent',newStudentRouter);
 
 
 module.exports = app;

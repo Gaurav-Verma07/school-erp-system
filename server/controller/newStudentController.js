@@ -1,7 +1,6 @@
 const newstudentModel = require("../models/newStudent");
 
-const newStudentController = {
-   register:async(req, res)=> {
+const registerHandler= async(req, res)=> {
     try {
       const {
         name,
@@ -39,6 +38,4 @@ const newStudentController = {
       res.status(500).json({ message: "Server error" });
     }
     }
-}
-
-module.exports = newStudentController;
+module.exports = {registerHandler};
