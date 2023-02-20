@@ -10,6 +10,7 @@
   "commit": true,
   "commitConvention": "none",
   "contributors": [
+    
     {
       "login": "Akshat103",
       "name": "Akshat Tamrakar",
@@ -19,6 +20,7 @@
         "code"
       ]
     },
+
     {
       "login": "Anshkanungo",
       "name": "AnshKanungo",
@@ -28,6 +30,7 @@
         "code"
       ]
     },
+
     {
       "login": "TuhinBanerjee31",
       "name": "Tuhin Banerjee",
@@ -37,6 +40,7 @@
         "code"
       ]
     }
+
   ],
   "contributorsPerLine": 7,
   "linkToUsage": false
