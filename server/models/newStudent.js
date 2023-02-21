@@ -28,7 +28,6 @@ const newStudentSchema = new mongoose.Schema({
   },
   schoolName: {
     type: String,
-    required: true,
   },
 });
 
