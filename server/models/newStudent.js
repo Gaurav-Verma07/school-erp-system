@@ -28,8 +28,9 @@ const newStudentSchema = new mongoose.Schema({
   },
   schoolName: {
     type: String,
+    required: true,
   },
 });
 
 const NewstudentModel = mongoose.model('NewStudent', newStudentSchema);
- module.exports = NewstudentModel
+module.exports = NewstudentModel;
