@@ -5,7 +5,6 @@ const excelToJsonConverter = require("../utlis/excelToJsonConverter");
 const uploadMiddleware = upload.single("dataFile"); // the field name associated with uploading file will be
 const adminDataPostController = catchAsync(async (req, res, next) => {
   const json = excelToJsonConverter(req.file.path);
-  console.log(json);
   await newstudentModel.insertMany(json, (err, result) => {
     if (err) console.log(err);
     if (result) {
