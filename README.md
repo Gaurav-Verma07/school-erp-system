@@ -4,6 +4,8 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 # School ERP System
 
+made some changes
+
 Since the covid times, the world has drastically shifted to a new tech front from copy and classrooms to smartphones and online classes. It was hard at beginning for students to cope up with the new advancements but after many efforts now the **online education system** has come to sync with offline classrooms. With this achievement however, there's still one thing missing, i.e, a smart Management System in many small town and rural schools. That's where comes the concept of **"School ERP System"** comes into play.
 
 We aim to provide a flawless ERP system to schools majorly at rural areas to reduce this gap and provide an uplift in this new modern era. 
