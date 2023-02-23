@@ -1,7 +1,9 @@
-const express = require("express");
+
+const express = require('express');
+
 const app = express();
-const cors = require("cors");
-require("./config/dbConfig");
+const cors = require('cors');
+require('./config/dbConfig');
 
 // Import Router
 const studentRouter = require("./routes/studentRoutes");
@@ -16,6 +18,7 @@ const adminDatapostRouter = require("./routes/adminDataPostRoutes");
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
 // Routes
 app.use("/v1/student/attendance", attendanceRouter);
 app.use("/v1/student", studentRouter);
