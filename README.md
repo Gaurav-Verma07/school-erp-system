@@ -15,7 +15,7 @@
 ![](https://img.shields.io/github/issues-pr/Gaurav-Verma07/school-erp-system?style=for-the-badge)
 ![](https://img.shields.io/github/issues-pr-closed-raw/Gaurav-Verma07/school-erp-system?style=for-the-badge) 
 <p align="center">
-
+<h2>Live Project -- (https://github.com/Gaurav-Verma07/school-erp-system)</h2>
 # School ERP System
 
 Since the covid times, the world has drastically shifted to a new tech front from copy and classrooms to smartphones and online classes. It was hard at beginning for students to cope up with the new advancements but after many efforts now the **online education system** has come to sync with offline classrooms. With this achievement however, there's still one thing missing, i.e, a smart Management System in many small town and rural schools. That's where comes the concept of **"School ERP System"** comes into play.
@@ -48,13 +48,13 @@ All these features have implemented frontend. The goal is to make APIs and handl
 _Preferred_: `JavaScript`, `MongoDB`, `Express`, `NodeJS`.
 
 _Additional_: `TypeScript`.
-<p align="center">
+
 ## To run frontend
 
-1. Go to this path: `school-erp-system/client`.
-2. Install all the required dependencies using `npm install`.
-3. Run the program locally using `npm run dev`.
-4. Open `localhost:3000` in your browser.
+ Go to this path: `school-erp-system/client`.<br>
+ Install all the required dependencies using `npm install`.<br>
+ Run the program locally using `npm run dev`.<br>
+ pen `localhost:3000` in your browser.<br>
 
 ## Find a bug?🕸
 
@@ -78,16 +78,6 @@ Please go through [CONTRIBUTING.md](https://github.com/Gaurav-Verma07/school-erp
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-<h2 align="center">Contribution Guidelines</h2>
-
-<p align="center">                    We would ❤️ for you to contribute to school erp system and help make it better by adding your ideas or by making current one better! We want contributing to be fun, enjoyable, and educational for everyone. All contributions are welcome, including issues as well as updates.                         </p>
-
-<br>
-
-<br>
-
-
 ###  How to Start?  📌
 
 If you have a idea of any school erp system you want to build just open an appropriate issue regarding this, we will discuss and assign you that issue.
@@ -95,56 +85,22 @@ If you have a idea of any school erp system you want to build just open an appro
 <br>
 
 <br>
+If you have any feedback or suggestions please reach out to Project - Maintainer.  <br>
+[Gaurav Verma](https://github.com/Gaurav-Verma07)
+
+<h2>Contributing is fun🧡</h2>
 
 
-
-###  Submit a Pull Request 🚀
-
-
-
-**All PRs must include a commit message with the changes description!**
-
-<b> <h3> For the initial start, fork the project and use git clone command to download the repository to your computer </b> </h3>. A standard procedure for working on an issue would be to:
-
-1. `git pull`, before creating a new branch, pull the changes from upstream. Your master needs to be up to date.
-
-```
-$ git pull
-```
-
-2. Create new branch from `master`
-```
-$ git checkout -b [name_of_your_new_branch]
-```
-
-3. Work - commit - repeat ( be sure to be in your branch )
-
-
-
-4. Push changes to GitHub
-
-```
-$ git push origin [name_of_your_new_branch]
-```
-
-5. Submit your changes for review
-   If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
-   
-6. Start a Pull Request
-   Now submit the pull request and click on `Create pull request`.
-   
-7. Get a code review approval/reject
-
-8. After approval, merge your PR 
-
-9. GitHub will automatically delete the branch after the merge is done. (they can still be restored).
-
-10. Yey! you made it! 🎊
-
-
-
+<h3>Contributions of any kind from anyone are always welcome🌟!!</h3>
+<h3>Give it a 🌟 if you ❤ this project. Happy Coding👨‍💻</h3>
+<p align="right">(<a href="#top">back to top</a>)</p>
+<br>
 
 <br>
+
+
+
+
 
 
 
@@ -156,7 +112,7 @@ $ git push origin [name_of_your_new_branch]
 <a href="https://github.com/Gaurav-Verma07/school-erp-system"><img src="https://forthebadge.com/images/badges/built-with-swag.svg" ></a>   
 
 <br>
-## Contributors ✨
+
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
