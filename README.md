@@ -69,6 +69,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Anshkanungo"><img src="https://avatars.githubusercontent.com/u/56950431?v=4?s=100" width="100px;" alt="AnshKanungo"/><br /><sub><b>AnshKanungo</b></sub></a><br /><a href="https://github.com/Gaurav Verma/School ERP System/commits?author=Anshkanungo" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/TuhinBanerjee31"><img src="https://avatars.githubusercontent.com/u/76838565?v=4?s=100" width="100px;" alt="Tuhin Banerjee"/><br /><sub><b>Tuhin Banerjee</b></sub></a><br /><a href="https://github.com/Gaurav Verma/School ERP System/commits?author=TuhinBanerjee31" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/SHAIKASIFALI"><img src="https://avatars.githubusercontent.com/u/86062660?v=4?s=100" width="100px;" alt="itsmeasif"/><br /><sub><b>itsmeasif</b></sub></a><br /><a href="https://github.com/Gaurav Verma/School ERP System/commits?author=SHAIKASIFALI" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Laxmankohar"><img src="https://avatars.githubusercontent.com/u/73365025?v=4" width="100px;" alt="Laxmankohar"/><br /><sub><b>itsmeasif</b></sub></a><br /><a href="https://github.com/Gaurav Verma/School ERP System/commits?author=Laxmankohar" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>

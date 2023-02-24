@@ -1,25 +1,7 @@
 import { createStyles, Card, Avatar, Text, Group, Button, Tabs, ScrollArea, Table } from '@mantine/core';
 import { IconFileReport, IconPhoto, IconSettings, IconUserCircle } from '@tabler/icons';
 import { UserData } from './UserData';
-
-const useStyles = createStyles((theme) => ({
-  card: {
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
-    
-  },
-
-  avatar: {
-    border: `2px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white}`,
-  },
-  tabs: {
-    width: '45%',
-    marginLeft: 60,
-  },
-  tableRow: {
-    borderBottom: 'none !important',
-  },
-}));
-
+import useStyles from './style';
 interface UserCardImageProps {
   image: string;
   avatar: string;
