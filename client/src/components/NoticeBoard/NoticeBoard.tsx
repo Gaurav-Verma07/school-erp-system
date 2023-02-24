@@ -1,21 +1,7 @@
 import { Badge, Box, Container, createStyles, Text } from '@mantine/core';
 import { NavLink } from 'react-router-dom';
 
-const useStyles = createStyles((theme) => {
-  return {
-    box: {
-      transition: 'all .3s',
-      color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.teal,
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : '#fff',
-      boxShadow: theme.shadows.sm,
-      borderRadius: theme.radius.md,
-      cursor: 'pointer',
-      '&:hover': {
-        transform: 'translateY(-2px)',
-      },
-    },
-  };
-});
+import useStyles from './style';
 
 const data = [
   { notice: 'Admit Card released for high school', isNew: true },
