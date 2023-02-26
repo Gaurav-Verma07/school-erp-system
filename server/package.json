@@ -5,8 +5,8 @@
     "main": "server.js",
     "scripts": {
         "start": "nodemon server.js",
-        "lint": "eslint .",
-        "format": "prettier --write .",
+        "lint": "eslint . --fix",
+        "format": "prettier . --write",
         "prepare": "husky install"
     },
     "author": "Gaurav Verma",
