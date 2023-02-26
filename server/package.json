@@ -38,8 +38,8 @@
     },
     "lint-staged": {
         "**/*.{js,json,md}": [
-            "npx prettier --write",
-            "npx eslint --fix"
+            "prettier --write",
+            "eslint --fix"
         ]
     }
 }
