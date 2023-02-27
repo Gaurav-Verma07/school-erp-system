@@ -4,7 +4,7 @@
         "commonjs": true,
         "es2021": true
     },
-    "extends": ["eslint-config-airbnb-base", "prettier", "plugin:node/recommended"],
+    "extends": ["eslint-config-airbnb-base", "plugin:node/recommended","prettier"],
     "overrides": [],
     "parserOptions": {
         "ecmaVersion": "latest"

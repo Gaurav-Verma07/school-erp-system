@@ -5,8 +5,9 @@
     "main": "server.js",
     "scripts": {
         "start": "nodemon server.js",
-        "lint": "eslint .",
-        "format": "prettier --write ."
+        "lint": "eslint . --fix",
+        "format": "prettier . --write",
+        "prepare": "husky install"
     },
     "author": "Gaurav Verma",
     "license": "ISC",
@@ -26,6 +27,20 @@
         "eslint-plugin-import": "^2.25.2",
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-prettier": "^4.2.1",
+        "husky": "^8.0.0",
+        "lint-staged": "^13.1.2",
         "prettier": "^2.8.4"
+    },
+    "lint-staged": {
+        "**/*.{js,json,md}": [
+            "prettier --write",
+            "eslint --fix"
+        ]
+    }
+    ,
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
     }
 }
