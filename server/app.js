@@ -11,7 +11,6 @@ const noticeRouter = require("./routes/noticeRoutes");
 const teacherRouter = require("./routes/teacherRoutes");
 const attendanceRouter = require("./routes/attendanceRoutes");
 const adminDatapostRouter = require("./routes/adminDataPostRoutes");
-const postTeachersDataRouter = require("./routes/postTeachersDataRoutes");
 
 // Middleware
 app.use(cors());
@@ -25,5 +24,4 @@ app.use("/v1/teacher", teacherRouter);
 app.use("/v1", sampleRouter);
 app.use("/v1/newstudent", newStudentRouter);
 app.use("/v1/admin", adminDatapostRouter);
-app.use("/v1/admin", postTeachersDataRouter);
 module.exports = app;
