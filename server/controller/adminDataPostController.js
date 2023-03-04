@@ -30,5 +30,8 @@ const postTeachersDataController = catchAsync(async (req, res, next) => {
   });
 });
 
-
-module.exports = { adminDataPostController, postTeachersDataController, uploadMiddleware };
+module.exports = {
+  adminDataPostController,
+  postTeachersDataController,
+  uploadMiddleware,
+};

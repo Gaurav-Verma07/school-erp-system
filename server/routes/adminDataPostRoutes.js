@@ -6,7 +6,6 @@ const {
   uploadMiddleware,
   postTeachersDataController,
 } = require("../controller/adminDataPostController");
-
 router.post("/postStudentData", uploadMiddleware, adminDataPostController);
 router.post("/postTeacherData", uploadMiddleware, postTeachersDataController);
 

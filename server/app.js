@@ -24,4 +24,5 @@ app.use("/v1/teacher", teacherRouter);
 app.use("/v1", sampleRouter);
 app.use("/v1/newstudent", newStudentRouter);
 app.use("/v1/admin", adminDatapostRouter);
+
 module.exports = app;

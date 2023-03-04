@@ -9,3 +9,5 @@ const {
 router.post("/postTeachersData", uploadMiddleware, postTeachersDataController);
 
 module.exports = router;
+
+//why this .all..
