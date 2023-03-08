@@ -1,7 +1,10 @@
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+![Contributors](https://img.shields.io/github/contributors/Gaurav-Verma07/school-erp-system?style=for-the-badge)
+  ![Forks](https://img.shields.io/github/forks/Gaurav-Verma07/school-erp-system?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/Gaurav-Verma07/school-erp-system?style=for-the-badge)
+![License](https://img.shields.io/github/license/Gaurav-Verma07/school-erp-system?style=for-the-badge)
+
+![](https://img.shields.io/github/issues-raw/Gaurav-Verma07/school-erp-system?color=orange&style=for-the-badge)
 # School ERP System
 
 Since the covid times, the world has drastically shifted to a new tech front from copy and classrooms to smartphones and online classes. It was hard at beginning for students to cope up with the new advancements but after many efforts now the **online education system** has come to sync with offline classrooms. With this achievement however, there's still one thing missing, i.e, a smart Management System in many small town and rural schools. That's where comes the concept of **"School ERP System"** comes into play.
@@ -67,7 +70,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/TuhinBanerjee31"><img src="https://avatars.githubusercontent.com/u/76838565?v=4?s=100" width="100px;" alt="Tuhin Banerjee"/><br /><sub><b>Tuhin Banerjee</b></sub></a><br /><a href="https://github.com/Gaurav Verma/School ERP System/commits?author=TuhinBanerjee31" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/SHAIKASIFALI"><img src="https://avatars.githubusercontent.com/u/86062660?v=4?s=100" width="100px;" alt="itsmeasif"/><br /><sub><b>itsmeasif</b></sub></a><br /><a href="https://github.com/Gaurav Verma/School ERP System/commits?author=SHAIKASIFALI" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Laxmankohar"><img src="https://avatars.githubusercontent.com/u/73365025?v=4" width="100px;" alt="Laxman Kohar"/><br /><sub><b>Laxman Kohar</b></sub></a><br /><a href="https://github.com/Gaurav Verma/School ERP System/commits?author=Laxmankohar" title="Code">💻</a></td>
-    </tr>
+   </tr>
   </tbody>
 </table>
 
@@ -76,4 +79,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

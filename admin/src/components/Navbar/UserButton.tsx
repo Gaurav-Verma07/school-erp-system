@@ -4,22 +4,9 @@ import {
     Group,
     Avatar,
     Text,
-    createStyles,
   } from '@mantine/core';
   import { IconChevronRight } from '@tabler/icons';
-  
-  const useStyles = createStyles((theme) => ({
-    user: {
-      display: 'block',
-      width: '100%',
-      padding: theme.spacing.md,
-      color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
-  
-      '&:hover': {
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
-      },
-    },
-  }));
+  import useStyles from './ButtonStyle';
   
   interface UserButtonProps extends UnstyledButtonProps {
     image: string;

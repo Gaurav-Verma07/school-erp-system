@@ -19,11 +19,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // Routes
-app.use('/v1/student/attendance', attendanceRouter);
-app.use('/v1/student', studentRouter);
-app.use('/v1/notice', noticeRouter);
-app.use('/v1/teacher', teacherRouter);
-app.use('/v1', sampleRouter);
-app.use('/v1/newstudent', newStudentRouter);
-app.use('/v1/admin', adminDatapostRouter);
+app.use("/v1/student/attendance", attendanceRouter);
+app.use("/v1/student", studentRouter);
+app.use("/v1/notice", noticeRouter);
+app.use("/v1/teacher", teacherRouter);
+app.use("/v1", sampleRouter);
+app.use("/v1/newstudent", newStudentRouter);
+app.use("/v1/admin", adminDatapostRouter);
 module.exports = app;

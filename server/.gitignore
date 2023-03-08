@@ -25,3 +25,4 @@ dist-ssr
 
 uploads
 src/seed/*.csv
+*.xlsx
