@@ -1,0 +1,46 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": ["eslint-config-airbnb-base", "plugin:node/recommended","prettier"],
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "off",
+        "no-unused-vars": "warn",
+        "no-console": "off",
+        "func-names": "off",
+        "no-process-exit": "off",
+        "object-shorthand": "off",
+        "class-methods-use-this": "off",
+        "import/newline-after-import": ["error", { "count": 1 }],
+        "consistent-return": ["error", { "treatUndefinedAsUnspecified": true }],
+        "new-cap": "error",
+        "arrow-body-style": ["error", "as-needed"],
+        "no-useless-escape": "warn",
+        "prefer-const": "error",
+        "import/order": "off",
+        "no-unneeded-ternary": "warn",
+        "prefer-destructuring": [
+            "error",
+            {
+                "VariableDeclarator": {
+                    "array": false,
+                    "object": true
+                },
+                "AssignmentExpression": {
+                    "array": true,
+                    "object": false
+                }
+            },
+            {
+                "enforceForRenamedProperties": false
+            }
+        ]
+    }
+}
