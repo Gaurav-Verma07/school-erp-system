@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home/Home';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
 import AuthenticationForm from './components/Register/Register';
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Navigate to="/login" />} />
             <Route path="/login" element={<AuthenticationForm />} />
             <Route path="/home/*" element={<Home />} />
+            <Route path="*" element={ <ErrorPage /> } />
           </Routes>
         </MantineProvider>
       </ColorSchemeProvider>
