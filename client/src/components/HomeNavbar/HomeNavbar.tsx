@@ -4,6 +4,7 @@ import { Navbar, Group, Code } from '@mantine/core';
 import {
   IconSettings,
   IconDatabaseImport,
+  IconForms,
   IconUserCheck,
   IconNotebook,
   IconSwitchHorizontal,
@@ -25,6 +26,7 @@ const data = [
   { link: 'admissions', label: 'Admissions', icon: IconUserPlus },
   { link: 'admitCards', label: 'Admit Cards', icon: IconIdBadge2 },
   { link: 'assignments', label: 'Assignments', icon: IconNotebook },
+  { link: 'contactUs', label: 'Contact Us', icon: IconForms },
   { link: 'settings', label: 'Settings', icon: IconSettings },
 ];
 
